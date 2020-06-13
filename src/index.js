@@ -1,17 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './index.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ProductListing from './ProductListing';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const addToBasket = (id) => {
+  alert('Hey, thanks for adding Product ID #' + id + ' to your basket!');
+};
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const init = () => {
+  const listingsPage = document.getElementById('container');
+
+  if (listingsPage) {
+      ReactDOM.render(<ProductListing addToBasket={addToBasket} />, listingsPage);
+  }
+};
+
+document.addEventListener('DOMContentLoaded', init);
