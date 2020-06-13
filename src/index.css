@@ -6,10 +6,26 @@
     padding: 20px;
     background-color: ghostwhite;
     display: inline-block;
+    
    
 };
 
-.button {
-    padding: 10px;
+.box:hover {
+    border: 1px #f2811e solid;
+}
+
+button {
+    padding: 8px 10px;
     margin: 10px;
+    background-color: #f2811e;
+    color: white;
+    font-size: 0.8em;   
+}
+
+button:hover {
+    background-color: #434649;
+}
+.products {
+    margin-left: auto;
+    margin-right: auto;
 }
