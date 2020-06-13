@@ -1,10 +1,10 @@
 .box {
-    width: 200px;
-    height: 250px;
+    width: 20%;
+    height: auto;
     border: 1px lightgray solid;
     margin: 20px;
     padding: 20px;
-    background-color: ghostwhite;
+    background-color: white;
     display: inline-block;
     
    
@@ -28,4 +28,15 @@ button:hover {
 .products {
     margin-left: auto;
     margin-right: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: black;
+    font-size: 1.3em;
+}
+
+.qty {
+    font-size: 0.8em;
+    color: darkolivegreen;
 }
