@@ -22,7 +22,7 @@ function App() {
 
   return <div className='products'>
 
-              {items.items.map((item, index) => <ProductListing addToBasket={addToBasket} id= {index} title={item.title} image={item.image} availability={item.stock} price={item.price} code={item.code}/>)}
+              {items.items.map((item, index) => <ProductListing addToBasket={addToBasket} id= {index} title={item.title} image={item.image} availability={item.stock} price={item.price} code={item.code} delivery={item.delivery_estimate}/> )}
               
           </div>
 
